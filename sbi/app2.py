@@ -20,7 +20,7 @@ choice = st.sidebar.selectbox("Menu", menu)
 # Load and preprocess data
 @st.cache_data
 def load_data():
-    data_path = r"Fraud data FY 2023-24 for B&CC (1).xlsx"
+    data_path = "Fraud data FY 2023-24 for B&CC (1).xlsx"
     data = pd.read_excel(data_path, sheet_name='Fraud data')
     return data
 
